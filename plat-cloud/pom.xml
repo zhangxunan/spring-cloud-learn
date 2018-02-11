@@ -20,6 +20,9 @@
 
     <modules>
         <module>eureka-server</module>
+        <module>user-center</module>
+        <module>sdk-cloud</module>
+        <module>web-demo</module>
     </modules>
 
     <properties>
@@ -38,10 +41,26 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+            <dependency>
+                <groupId>com.ngdsoft</groupId>
+                <artifactId>sdk-cloud</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.ngdsoft</groupId>
+                <artifactId>api-cloud</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
     <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>

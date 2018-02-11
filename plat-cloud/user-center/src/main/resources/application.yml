@@ -1,0 +1,19 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://peer1:1111/eureka/,http://peer2:1112/eureka/,http://peer3:1113/eureka/
+
+spring:
+  application:
+    name: user-center
+
+---
+server:
+  port: 8001
+spring:
+  profiles: user1
+---
+server:
+  port: 8002
+spring:
+  profiles: user2
