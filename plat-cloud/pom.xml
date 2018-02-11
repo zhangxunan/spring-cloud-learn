@@ -48,7 +48,7 @@
             </dependency>
             <dependency>
                 <groupId>com.ngdsoft</groupId>
-                <artifactId>api-cloud</artifactId>
+                <artifactId>service-api</artifactId>
                 <version>0.0.1-SNAPSHOT</version>
             </dependency>
         </dependencies>
