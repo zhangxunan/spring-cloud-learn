@@ -78,7 +78,7 @@
 
         <dependency>
             <groupId>com.ngdsoft</groupId>
-            <artifactId>service-api</artifactId>
+            <artifactId>service-client</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>

@@ -6,6 +6,9 @@ eureka:
 spring:
   application:
     name: user-center
+server:
+  context-path: /user-api
+
 
 ---
 server:
