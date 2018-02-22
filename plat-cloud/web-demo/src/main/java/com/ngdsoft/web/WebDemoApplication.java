@@ -8,7 +8,7 @@ import org.springframework.cloud.netflix.feign.EnableFeignClients;
 import org.springframework.context.annotation.Bean;
 
 @EnableDiscoveryClient
-@EnableFeignClients(basePackages = "com.ngdsoft.client.**")//单独 jar 包需要指定 package
+@EnableFeignClients(basePackages = {"com.ngdsoft.client.**"})
 @SpringBootApplication
 public class WebDemoApplication {
 

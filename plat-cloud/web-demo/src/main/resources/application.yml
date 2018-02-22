@@ -5,7 +5,13 @@ eureka:
 
 feign:
   hystrix:
-    enabled: true
+    #是否开启断熔器
+    enabled: false
+    command:
+        default:
+          execution:
+            timeout:
+              enabled: false
   #开启请求压缩功能
   compression:
     request:
@@ -26,3 +32,8 @@ spring:
   output:
   #控制台彩色输出
     ansi.enabled: ALWAYS
+
+logging:
+  level:
+    com.ngdsoft.client: DEBUG
+    com.ngdsoft.api: INFO
