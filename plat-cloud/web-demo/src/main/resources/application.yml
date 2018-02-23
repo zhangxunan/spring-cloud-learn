@@ -4,6 +4,11 @@ eureka:
       defaultZone: http://peer1:1111/eureka/,http://peer2:1112/eureka/,http://peer3:1113/eureka/
 
 feign:
+  #feign use okhttp
+  httpclient:
+    enabled: false
+  okhttp:
+    enabled: true
   hystrix:
     #是否开启断熔器
     enabled: false
@@ -37,3 +42,6 @@ logging:
   level:
     com.ngdsoft.client: DEBUG
     com.ngdsoft.api: INFO
+
+debug: false
+

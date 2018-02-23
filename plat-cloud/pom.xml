@@ -20,9 +20,14 @@
 
     <modules>
         <module>eureka-server</module>
+
         <module>sdk-cloud</module>
-        <module>web-demo</module>
+        <module>service-api</module>
+        <module>service-client</module>
+
         <module>web-user-center</module>
+
+        <module>web-demo</module>
     </modules>
 
     <properties>
